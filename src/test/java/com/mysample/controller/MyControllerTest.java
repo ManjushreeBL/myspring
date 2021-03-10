@@ -19,8 +19,6 @@ public class MyControllerTest {
         Beer beer1=Beer.builder()
                 .beerName("Manju").beerstyle("Ace")
                 .build();
-
-
         assertNotNull( myController.getbyID(beer1.getBeerName()));
         System.out.println(myController.getbyID(beer1.getBeerName()));
     }
