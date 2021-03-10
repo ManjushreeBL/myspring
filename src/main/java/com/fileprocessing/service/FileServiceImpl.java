@@ -1,6 +1,6 @@
-package com.mysample.service;
+package com.fileprocessing.service;
 
-public class ManipulateServiceImpl implements ManipulateService{
+public class FileServiceImpl implements FileService{
     @Override
     public  String[] calculateFile(String line) {
         return line.split("|",100);

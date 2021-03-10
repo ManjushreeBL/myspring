@@ -24,9 +24,5 @@ public class MyControllerTest {
         assertNotNull( myController.getbyID(beer1.getBeerName()));
         System.out.println(myController.getbyID(beer1.getBeerName()));
     }
-    @Test
-    public void printInputFile() throws IOException {
-        assertNotNull(myController.getFile(Path.of("/file.txt")));
-        System.out.println(myController.getFile(Path.of("/file.txt")));
-    }
+
 }
