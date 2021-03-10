@@ -20,7 +20,7 @@ public class FileController {
             path= Paths.get("C:\\Users\\Vinay\\javaProjects\\demo\\src\\main\\resources\\file.txt");
             InputStream inputStream = Files.newInputStream(path);
             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-            line = reader.toString();
+            line = reader.readLine();
         }
         catch(IOException e){
             e.printStackTrace();
