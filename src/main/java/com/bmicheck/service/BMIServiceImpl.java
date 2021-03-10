@@ -6,7 +6,7 @@ public class BMIServiceImpl implements BMIService{
     @Override
     public BMIEntity calculateBMI(Integer height, Integer weight) {
         BMIEntity bmiEntity=new BMIEntity(height,weight);
-        bmiEntity.getBMIIndex();
+        bmiEntity.setBMIIndex(height, weight);
         return bmiEntity;
     }
 

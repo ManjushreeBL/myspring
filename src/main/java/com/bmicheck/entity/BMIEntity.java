@@ -14,7 +14,12 @@ public class BMIEntity {
     private Integer weight;
     private Integer BMIIndex;
 
-    public BMIIndex getBMIIndex(height,weight){
-        return (this.weight/(this.height/100)**2);
+    public BMIEntity(Integer height, Integer weight) {
+    }
+
+    public Integer setBMIIndex( Integer height,Integer weight){
+        Integer value=this.weight/(this.height/100)*(this.height/100);
+
+        return value;
     }
 }
