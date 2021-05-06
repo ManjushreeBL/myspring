@@ -1,4 +1,4 @@
-package com.mysample.demo;
+package com.bmicheck;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
