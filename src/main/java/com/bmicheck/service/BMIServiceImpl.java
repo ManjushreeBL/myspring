@@ -2,6 +2,7 @@ package com.bmicheck.service;
 
 import com.bmicheck.entity.BMIEntity;
 
+
 public class BMIServiceImpl implements BMIService{
     @Override
     public BMIEntity calculateBMI(Integer height, Integer weight) {
