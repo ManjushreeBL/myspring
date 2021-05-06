@@ -6,8 +6,7 @@ import com.bmicheck.service.BMIServiceImpl;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.ResponseBody;
+
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -19,7 +18,7 @@ public class BMIController {
         Integer height=160;
         Integer weight=60;
         BMIEntity bmiEntity=impl.calculateBMI(height,weight);
-        return new ResponseEntity<BMIEntity>(bmiEntity,HttpStatus.ACCEPTED);
+        return new ResponseEntity<>(bmiEntity,HttpStatus.ACCEPTED);
         //return "Hello world";
     }
 }
