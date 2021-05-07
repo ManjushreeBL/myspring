@@ -1,25 +1,22 @@
 package com.bmicheck.entity;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-@Setter
-@Getter
 @Data
 @RequiredArgsConstructor
+@Builder
+@AllArgsConstructor
 public class BMIEntity {
-    private Integer height;
-    private Integer weight;
-    private Integer BMIIndex;
+    private Float height;
+    private Float weight;
+    private Float BMIIndex;
 
-    public BMIEntity(Integer height, Integer weight) {
+
+    public BMIEntity(Float height, Float weight){
+        this.height=height;
+        this.weight=weight;
     }
 
-    public Integer setBMIIndex( Integer height,Integer weight){
-        Integer value=this.weight/(this.height/100)*(this.height/100);
 
-        return value;
-    }
+
 }
