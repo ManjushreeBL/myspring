@@ -1,4 +1,4 @@
-package com.bmicheck.controller;
+/*package com.bmicheck.controller;
 
 
 import org.springframework.boot.web.servlet.error.ErrorController;
@@ -15,4 +15,4 @@ class ErrorHandlerController implements ErrorController{
     public String getErrorPath() {
         return "<center><h1>Something went wrong</h1></center>";
     }
-}
+}*/

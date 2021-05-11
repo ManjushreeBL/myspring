@@ -15,6 +15,4 @@ public class Beer {
     private String beerName;
     private Date preparedDate;
     private String beerstyle;
-
-
-}
+    }
